@@ -1,0 +1,7 @@
+.checklist-modal {
+  @mixin mod($mod) {
+    @include modifier("checklist-modal", $mod){
+      @content;
+    }
+  }
+}

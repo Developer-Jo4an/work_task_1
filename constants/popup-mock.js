@@ -1,0 +1,300 @@
+export const store = {
+  "type": "store",
+  "cell": "cell_5",
+  "improvement_level": 2,
+  "improvement": {
+    "id": "984d5d66-a7a4-44dc-b27e-7f0a4233f5f7",
+    "title": "Уровень №2",
+    "amplification_value": 0.0,
+    "cost": 4000,
+    "repair_cost": 1000,
+    "destroy_cost": 1000,
+    "construction_time": 120,
+    "next_improvement": "d6e630c0-f6be-447d-8e41-4545e11fd49c",
+    "is_start_improvement": false,
+    "production_time": 90,
+    "production_cost": 100,
+    "production_cost_type": "boxes",
+    "production_quantity": 50,
+    "production_type": "money"
+  },
+  "amplification_area": "building",
+  "produce_start": null,
+  "is_broken": true,
+  "last_time_collected": null,
+  "start_upgrading": 1686661713,
+  "last_time_upgraded": 1686661833
+}
+
+export const buildings = [
+  {
+    "improvements": [
+      {
+        "id": "b4fe5afc-8162-49a7-957e-e18a64663944",
+        "title": "Уровень №3",
+        "amplification_value": 2.0,
+        "cost": 5000,
+        "repair_cost": 500,
+        "destroy_cost": 0,
+        "construction_time": 180,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      },
+      {
+        "id": "7477dff1-0ec3-4155-b10f-271e574b7393",
+        "title": "Уровень №2",
+        "amplification_value": 1.0,
+        "cost": 2000,
+        "repair_cost": 500,
+        "destroy_cost": 0,
+        "construction_time": 60,
+        "next_improvement": "b4fe5afc-8162-49a7-957e-e18a64663944",
+        "is_start_improvement": false,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      },
+      {
+        "id": "b62ea98b-0337-4307-bbe1-6dde0b52540f",
+        "title": "Уровень №1",
+        "amplification_value": 0.5,
+        "cost": 0,
+        "repair_cost": 0,
+        "destroy_cost": 0,
+        "construction_time": 0,
+        "next_improvement": "7477dff1-0ec3-4155-b10f-271e574b7393",
+        "is_start_improvement": true,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      }
+    ],
+    "type": "road",
+    "amplification_area": "area"
+  },
+  {
+    "improvements": [
+      {
+        "id": "d6e630c0-f6be-447d-8e41-4545e11fd49c",
+        "title": "Уровень №3",
+        "amplification_value": 0.0,
+        "cost": 6000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 120,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": 120,
+        "production_cost": 300,
+        "production_cost_type": "boxes",
+        "production_quantity": 200,
+        "production_type": "money"
+      },
+      {
+        "id": "984d5d66-a7a4-44dc-b27e-7f0a4233f5f7",
+        "title": "Уровень №2",
+        "amplification_value": 0.0,
+        "cost": 4000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 120,
+        "next_improvement": "d6e630c0-f6be-447d-8e41-4545e11fd49c",
+        "is_start_improvement": false,
+        "production_time": 90,
+        "production_cost": 100,
+        "production_cost_type": "boxes",
+        "production_quantity": 50,
+        "production_type": "money"
+      },
+      {
+        "id": "1de63ee0-b057-402d-8504-b52e2272601b",
+        "title": "Уровень №1",
+        "amplification_value": 0.0,
+        "cost": 3000,
+        "repair_cost": 500,
+        "destroy_cost": 500,
+        "construction_time": 60,
+        "next_improvement": "984d5d66-a7a4-44dc-b27e-7f0a4233f5f7",
+        "is_start_improvement": true,
+        "production_time": 60,
+        "production_cost": 25,
+        "production_cost_type": "boxes",
+        "production_quantity": 5,
+        "production_type": "money"
+      }
+    ],
+    "type": "store",
+    "amplification_area": "building"
+  },
+  {
+    "improvements": [
+      {
+        "id": "27cd4922-b32f-4ade-bc07-192d9ce67ecc",
+        "title": "Уровень №3",
+        "amplification_value": 4.0,
+        "cost": 6000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 120,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      },
+      {
+        "id": "0ab508e5-f170-417a-9c9a-ab4cc776e626",
+        "title": "Уровень №2",
+        "amplification_value": 2.0,
+        "cost": 3000,
+        "repair_cost": 500,
+        "destroy_cost": 500,
+        "construction_time": 120,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      },
+      {
+        "id": "e9faf1e8-5ca9-4b81-b06f-279270e7ca78",
+        "title": "Уровень №1",
+        "amplification_value": 1.5,
+        "cost": 2000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 60,
+        "next_improvement": "0ab508e5-f170-417a-9c9a-ab4cc776e626",
+        "is_start_improvement": true,
+        "production_time": null,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": null,
+        "production_type": null
+      }
+    ],
+    "type": "office",
+    "amplification_area": "area"
+  },
+  {
+    "improvements": [
+      {
+        "id": "76b1356e-3554-466b-b7b3-7b530f9d0458",
+        "title": "Уровень №3",
+        "amplification_value": 0.0,
+        "cost": 5000,
+        "repair_cost": 1500,
+        "destroy_cost": 1500,
+        "construction_time": 150,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": 120,
+        "production_cost": 200,
+        "production_cost_type": "tobacco",
+        "production_quantity": 100,
+        "production_type": "boxes"
+      },
+      {
+        "id": "f9dead40-fecb-4a03-9cfb-7cbdf4cab7df",
+        "title": "Уровень №2",
+        "amplification_value": 0.0,
+        "cost": 4000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 120,
+        "next_improvement": "76b1356e-3554-466b-b7b3-7b530f9d0458",
+        "is_start_improvement": false,
+        "production_time": 90,
+        "production_cost": 100,
+        "production_cost_type": "tobacco",
+        "production_quantity": 30,
+        "production_type": "boxes"
+      },
+      {
+        "id": "32f53a55-4244-4d2d-9cf7-83204d6d6358",
+        "title": "Уровень №1",
+        "amplification_value": 0.0,
+        "cost": 2000,
+        "repair_cost": 500,
+        "destroy_cost": 500,
+        "construction_time": 60,
+        "next_improvement": "f9dead40-fecb-4a03-9cfb-7cbdf4cab7df",
+        "is_start_improvement": true,
+        "production_time": 60,
+        "production_cost": 25,
+        "production_cost_type": "tobacco",
+        "production_quantity": 5,
+        "production_type": "boxes"
+      }
+    ],
+    "type": "factory",
+    "amplification_area": "building"
+  },
+  {
+    "improvements": [
+      {
+        "id": "a9266641-2e96-427f-911b-035a61b1bbee",
+        "title": "Уровень №3",
+        "amplification_value": 0.0,
+        "cost": 5000,
+        "repair_cost": 1500,
+        "destroy_cost": 1500,
+        "construction_time": 180,
+        "next_improvement": null,
+        "is_start_improvement": false,
+        "production_time": 120,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": 200,
+        "production_type": "tobacco"
+      },
+      {
+        "id": "dd5a611a-791a-4cf1-a593-1d0b19cb40a2",
+        "title": "Уровень №2",
+        "amplification_value": 0.0,
+        "cost": 4000,
+        "repair_cost": 1000,
+        "destroy_cost": 1000,
+        "construction_time": 120,
+        "next_improvement": "a9266641-2e96-427f-911b-035a61b1bbee",
+        "is_start_improvement": false,
+        "production_time": 90,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": 50,
+        "production_type": "tobacco"
+      },
+      {
+        "id": "0b460c3b-60ec-4d90-8ff2-d9d36a0f82d3",
+        "title": "Уровень №1",
+        "amplification_value": 0.0,
+        "cost": 2000,
+        "repair_cost": 500,
+        "destroy_cost": 500,
+        "construction_time": 10,
+        "next_improvement": "dd5a611a-791a-4cf1-a593-1d0b19cb40a2",
+        "is_start_improvement": true,
+        "production_time": 60,
+        "production_cost": null,
+        "production_cost_type": null,
+        "production_quantity": 5,
+        "production_type": "tobacco"
+      }
+    ],
+    "type": "field",
+    "amplification_area": "building"
+  }
+]

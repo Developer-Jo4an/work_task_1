@@ -1,0 +1,7 @@
+.update-build {
+  @mixin mod($mod) {
+    @include modifier("update-build", $mod){
+      @content;
+    }
+  }
+}

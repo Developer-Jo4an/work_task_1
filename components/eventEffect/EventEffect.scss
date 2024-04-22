@@ -1,0 +1,233 @@
+.event-effect {
+  @mixin mod($mod) {
+    @include modifier("event-effect", $mod) {
+      @content;
+    }
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+
+  &.enter{
+    opacity: 0;
+  }
+  &.enter-active{
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+  }
+  &.enter-done{
+    opacity: 1;
+  }
+  &.exit{
+    opacity: 1;
+  }
+  &.exit-active{
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  &.exit-done{
+    opacity: 0;
+  }
+
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100.5%;
+    display: block;
+    animation: effect-frame 1s ease-in-out alternate-reverse infinite;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__flood {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: snow-path-move 3s infinite ease-in;
+
+    &:nth-child(13n + 5) {
+      img {
+        opacity: .8;
+      }
+    }
+
+    &:nth-child(12n + 7) {
+      img {
+        opacity: .65;
+      }
+    }
+
+    &:nth-child(8n + 3) {
+      img {
+        opacity: .5;
+      }
+    }
+
+    &:nth-child(6n + 5) {
+      animation-duration: 3/0.75*1s;
+
+      img {
+        transform: scale(0.75);
+      }
+    }
+
+    &:nth-child(6n + 2) {
+      animation-duration: 3/0.5*1s;
+
+      img {
+        transform: scale(0.5);
+      }
+    }
+  }
+
+  &__snow {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: snow-path-move 5s infinite ease-in-out;
+
+    img {
+      @include option(width, 54px);
+      @include option(height, 54px);
+      animation: snow-path-img 5s infinite linear;
+    }
+
+    &:nth-child(3n +1) {
+      animation-duration: random(5)*1s + random()*1s;
+
+      img {
+        animation-delay: -2.5s;
+      }
+    }
+
+    &:nth-child(4n + 1) {
+      animation-duration: random(4)*1s + random()*1s;
+
+      img {
+        animation-delay: -3.5s;
+      }
+    }
+  }
+
+  &__tornado-item {
+    position: absolute;
+    right: 0;
+    animation: 5s infinite ease-in-out;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      animation: snow-path-img 3s infinite ease-in-out;
+    }
+
+    &_1 {
+      top: 15%;
+      @include option(width, 277px);
+      @include option(height, 203px);
+      opacity: 0;
+      animation-name: tornado-path-1;
+      animation-delay: 2.2s;
+      animation-duration: 9.15s;
+
+      img {
+        animation-delay: -0.5s;
+        animation-duration: 9.15s;
+      }
+    }
+
+    &_5 {
+      top: 30%;
+      @include option(width, 266px);
+      @include option(height, 133px);
+      opacity: 0;
+      animation-name: tornado-path-5;
+      animation-delay: 5.25s;
+      animation-duration: 9.15s;
+
+      img {
+        animation-delay: -1.25s;
+        animation-duration: 9.15s;
+      }
+    }
+
+    &_4 {
+      top: 56%;
+      @include option(width, 347px);
+      @include option(height, 128px);
+      opacity: 0;
+      animation-name: tornado-path-4;
+      animation-delay: 8.28s;
+      animation-duration: 9.15s;
+
+      img {
+        animation-delay: -2.123s;
+        animation-duration: 9.15s;
+      }
+    }
+
+    &_3 {
+      top: 60%;
+      @include option(width, 98px);
+      @include option(height, 64px);
+      animation-name: tornado-path-3;
+      animation-duration: (6 + random(3) + random())*1s;
+      animation-delay: (-3.55+random())*1s;
+
+      img {
+        transform-origin: 100% 150%;
+        animation-timing-function: linear;
+      }
+    }
+
+    &_2 {
+      top: 24.85%;
+      @include option(width, 104px);
+      @include option(height, 57px);
+      animation-name: tornado-path-2;
+      animation-duration: (5 + random(3) + random())*1s;
+      animation-delay: (-5+random())*1s;
+
+      img {
+        transform-origin: 100% 160%;
+        animation-timing-function: linear;
+      }
+    }
+
+    &_6 {
+      top: 5%;
+      @include option(width, 93px);
+      @include option(height, 63px);
+      animation-name: tornado-path-6;
+      animation-duration: (4 + random(3) + random())*1s;
+      animation-delay: (-2 + random())*1s;
+
+      img {
+        transform-origin: 110% 120%;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura Book Cyrillic'), local('FuturaBookC'),
+        url('FuturaBookC.woff2') format('woff2'),
+        url('FuturaBookC.woff') format('woff'),
+        url('FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura Demi Cyrillic'), local('FuturaDemiC'),
+        url('FuturaDemiC.woff2') format('woff2'),
+        url('FuturaDemiC.woff') format('woff'),
+        url('FuturaDemiC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), local('Nunito'),
+  url('Nunito-ExtraLight.woff2') format('woff2 supports variations'),
+  url('Nunito.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), local('Inter'),
+  url('Inter-Regular.woff2') format('woff2 supports variations'),
+  url('Inter.ttf') format('truetype');
+  font-display: swap;
+}
+

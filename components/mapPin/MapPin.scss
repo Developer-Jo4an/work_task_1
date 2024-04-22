@@ -1,0 +1,54 @@
+.map-pin {
+  @mixin mod($mod) {
+    @include modifier("map-pin", $mod) {
+      @content;
+    }
+  }
+  position: absolute;
+  width: 0px;
+  height: 0px;
+
+  pointer-events: none;
+
+  transition: opacity 0.5s;
+
+  &_interactive {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  &__image {
+    position: absolute;
+    @include option(top, -93px);
+    left: 50%;
+    @include option(font-size, 77px);
+    width: 1em;
+    height: 1em;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__tail {
+    @include option(font-size, 27px);
+    width: 1.05em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+}

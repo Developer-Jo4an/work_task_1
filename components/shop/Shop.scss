@@ -1,0 +1,7 @@
+.shop {
+  @mixin mod($mod) {
+    @include modifier("shop", $mod){
+      @content;
+    }
+  }
+}

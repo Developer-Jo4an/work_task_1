@@ -1,0 +1,19 @@
+/**
+ * Обычный текст
+ */
+
+%DEFAULT {
+  font-family: $BASE-FONT;
+  @include option(font-size, 18px);
+  line-height: 24/18*1;
+  color: #000000;
+}
+
+%SMALL {
+  font-family: $BASE-FONT;
+  @include option(font-size, 12px);
+
+  color: #000000;
+}
+
+

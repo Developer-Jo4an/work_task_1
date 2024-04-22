@@ -1,0 +1,230 @@
+@import "./animations/preloader";
+
+@mixin animation($animation){
+  @if content {
+    @keyframes #{nth($animation, 1)} {
+      @content;
+    }
+  }
+  @if & {
+    @if length($animation) == 1 {
+      animation-name: $animation;
+    } @else if length($animation) > 1 {
+      animation: $animation;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes effect-frame {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translate(0, -10vh);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+//%SHAKE {
+//  @include shake-animation(SCALE-SHAKE, .025, 1, 1.0s);
+//}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes lock-on {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    opacity: 1;
+    background-position: 100% 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes frame-top {
+  0% {
+    background-position: 0 0;
+  }
+
+  100%{
+    background-position: 100% 0;
+  }
+}
+@keyframes frame-left {
+  0% {
+    background-position: 0 0;
+  }
+
+  100%{
+    background-position: 0 100%;
+  }
+}
+@keyframes snow-path-move {
+  0%{
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  5%,95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-50vw,100vh) ;
+  }
+}
+
+@keyframes snow-path-img {
+  0%{
+    transform: rotate(0turn);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes tornado-path-1 {
+  0%{
+    opacity: 0;
+    transform:  translateX(100%) translateY(-25%);
+  }
+  5%,50%{
+    opacity: 1;
+  }
+  55%,100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(50vh);
+  }
+}
+@keyframes tornado-path-5 {
+  0%{
+    opacity: 0;
+    transform:  translateX(100%) translateY(-25%);
+  }
+  5%,55%{
+    opacity: 1;
+  }
+  60%,100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(20vh);
+  }
+}
+@keyframes tornado-path-4 {
+  0%{
+    opacity: 0;
+    transform:  translateX(100%) translateY(-50%);
+  }
+  3%,48%{
+    opacity: 1;
+  }
+  52%,100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(10vh);
+  }
+}
+@keyframes tornado-path-3 {
+  0%{
+    opacity: 0;
+    transform:  translateX(0) translateY(-25%);
+  }
+  10%,90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(50vh);
+  }
+}
+@keyframes tornado-path-2 {
+  0%{
+    opacity: 0;
+    transform:  translateX(0) translateY(-25%);
+  }
+  10%,90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(20vh);
+  }
+}
+@keyframes tornado-path-6 {
+  0%{
+    opacity: 0;
+    transform:  translateX(0) translateY(-50%);
+  }
+  10%,90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform:  translateX(-100vw) translateY(10vh);
+  }
+}

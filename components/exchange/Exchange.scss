@@ -1,0 +1,101 @@
+.exchange {
+  @mixin mod($mod) {
+    @include modifier("exchange", $mod) {
+      @content;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @include option(padding, 0 30px);
+  box-sizing: border-box;
+
+  &_from{
+    background: #F9F9F9;
+    @include option(margin, 20px 0 9px);
+  }
+  &_to{
+    background: #F4FFE5;
+  }
+
+  &__title{
+    font-weight: 500;
+    @include option(font-size, 28px, 20px);
+  }
+
+  &__settings{
+    @include option(height, 130px, 110px);
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__settings-value{
+    @include option(font-size, 28px, 20px);
+    line-height: 1;
+  }
+  &__settings-button{
+    @include option(font-size, 35px, 30px);
+    width: 1em;
+    height: 1em;
+    line-height: .8;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  &__resources {
+    @include option(height, 130px, 110px);
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__resources-list {
+    @include option(font-size, 40px);
+    width: 1em;
+    height: 1em;
+    @include option(margin, 7px);
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__resources-button{
+    background: none;
+    border: none;
+    padding: 0;
+    @include option(font-size, 25px);
+    width: 1em;
+    height: .5em;
+    &.swiper-button-disabled{
+      opacity: 0.5;
+    }
+    svg{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__item-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+
+}

@@ -1,0 +1,34 @@
+.progress-bar {
+  @mixin mod($mod) {
+    @include modifier("progress-bar", $mod){
+      @content;
+    }
+  }
+  position: absolute;
+  @include option(width, 120px);
+  @include option(height, 24px);
+
+  pointer-events: none;
+
+  transition: opacity 0.5s;
+
+  &__block{
+    width: 100%;
+    height: 100%;
+    border: solid #000000;
+    background-color: $WHITE;
+    @include option(border-width, 2px);
+    @include option(border-radius, 5px);
+    box-sizing: border-box;
+    transform: translate(-50%, 50%);
+  }
+
+  &__line{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    @include option(border-radius, 2px);
+    background: #FFC700;
+  }
+}

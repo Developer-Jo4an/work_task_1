@@ -1,0 +1,55 @@
+{
+  "carsCount": 60,
+  "baseSpeed": 0.02,
+  "roadOffset": 0.3,
+  "camera": {
+    "restrictions": {
+      "zoom": {
+        "min": 58,
+        "max": 120
+      },
+      "x": {
+        "min": -30,
+        "max": 30
+      },
+      "z": {
+        "min": -30,
+        "max": 30
+      }
+    },
+    "size": 1496,
+    "zoom": 58,
+    "selectZoom": 360,
+    "baseTarget": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "position": {
+      "x": -270,
+      "y": 270,
+      "z": 270
+    }
+  },
+  "lights": [
+    {
+      "type": "DirectionalLight",
+      "args": [
+        "#ffffff",
+        0.5
+      ],
+      "position": {
+        "x": -0.077,
+        "y": 9.713,
+        "z": 7.877
+      }
+    },
+    {
+      "type": "AmbientLight",
+      "args": [
+        "#ffffff",
+        0.5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+@import "../components/baseComponents/gui/header/Header";
+@import "../components/baseComponents/gui/footer/Footer";
+@import "../components/layouts/MainLayout";
+@import "../components/game/Game";
+@import "../components/testBuildings/TestBuildings";
+@import "../components/exchanger/Exchanger";
+//Стилизация для collapse
+@import "~rc-collapse/assets/index.css";
+@import "../components/baseComponents/gui/button/Button";
+@import "../components/baseComponents/gui/customModal/CustomModal";
+@import "../components/baseComponents/gui/customMenu/CustomMenu";
+@import "../components/baseComponents/gui/customHeader/CustomHeader";
+@import "../components/baseComponents/gui/carousel/Carousel";
+@import "../components/headPanel/HeadPanel";
+@import "../components/info/Info";
+@import "../components/messageModal/MessageModal";
+@import "../components/startModal/StartModal";
+@import "../components/helpModal/HelpModal";
+@import "../components/exchangeModal/ExchangeModal";
+@import "../components/tutorial/Tutorial";
+@import "../components/eventEffect/EventEffect";
+@import "../components/checklistButton/ChecklistButton";
+@import "../components/helpButton/HelpButton";
+@import "../components/exchangeButton/ExchangeButton";
+@import "../components/exchange/Exchange";
+@import "../components/mapPin/MapPin";
+@import "../components/progressBar/ProgressBar";
+
+
+
+

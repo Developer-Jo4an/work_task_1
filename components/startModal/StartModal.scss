@@ -1,0 +1,100 @@
+.start-modal {
+  @mixin mod($mod) {
+    @include modifier("start-modal", $mod) {
+      @content;
+    }
+  }
+
+
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+
+  &__bg-window {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include option(font-size, 40px, 26px);
+    width: 1em;
+    height: 1em;
+    padding: .14em;
+    background: $WHITE;
+    border: 2px solid $BLACK;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &__close-button-icon {
+    @include cross(100%, .05em, $BLACK);
+  }
+
+
+  &__content {
+    position: relative;
+    @include option(width, 469px*1.2, 347px);
+    @include option(padding, 71px 65px, 53px 25px);
+    box-sizing: border-box;
+    text-align: center;
+
+
+    @include MOBILE {
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    @include option(height, 180px*1.3, 150px);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: 500;
+    @include option(font-size, 22px, 18px);
+    @include option(line-height, 28px, 20px);
+    @include option(margin, 17px 0);
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 100%;
+    @include option(font-size, 20px, 18px);
+    @include option(line-height, 24px, 20px);
+  }
+
+  &__button {
+    width: 100%;
+    @include option(margin, 17px 0 0);
+    @include option-mob(width, 295px);
+    @include option(height, 51px);
+  }
+}

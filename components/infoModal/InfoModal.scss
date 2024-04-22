@@ -1,0 +1,7 @@
+.info-modal {
+  @mixin mod($mod) {
+    @include modifier("info-modal", $mod){
+      @content;
+    }
+  }
+}
